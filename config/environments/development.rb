@@ -9,6 +9,10 @@ Rails.application.configure do
   # Do not eager load code on boot.
   config.eager_load = false
 
+  # Email configuration below - don't have working email
+  # config.action_mailer_delivery_method = :test
+  # config.action_mail.default_url_options = { :host => 'link_to_local_dev_environment'}
+
   # Show full error reports.
   config.consider_all_requests_local = true
 
