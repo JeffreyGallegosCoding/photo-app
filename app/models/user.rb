@@ -8,4 +8,5 @@ class User < ApplicationRecord
   # user accepts the payment attributes as well upon form submission
   # will hit the payments table at the same time the users table is hit
   accepts_nested_attributes_for :payment
+  has_many :images
 end

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :images
   # for registrations looks at my own registrations controller first and
   # then look at devise's registration controller
   devise_for :users, :controllers => { :registrations => 'registrations' }
