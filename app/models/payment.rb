@@ -1,6 +1,6 @@
 class Payment < ApplicationRecord
   # needed fields for card payments
-  attr_accessor :card_number, :card_cvv, :card_expires_month, :card_expires_year
+  attr_accessor :card_number, :card_cvc, :card_expires_month, :card_expires_year
   belongs_to :user
 
   # displays for month and year options

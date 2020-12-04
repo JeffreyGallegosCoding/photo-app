@@ -9,7 +9,7 @@ class RegistrationsController < Devise::RegistrationsController
     resource.class.transaction do
       resource.save
       yield resource if block_given?
-      if resource persisted?
+      if resource.persisted?
         # create a payment
         @payment = Payment.new({ email: params["user"]["email"],
                                 token: params[:payment]["token"],
