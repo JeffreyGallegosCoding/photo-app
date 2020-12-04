@@ -10,8 +10,8 @@ Rails.application.configure do
   config.eager_load = false
 
   # Email configuration below - don't have working email
-  # config.action_mailer_delivery_method = :test
-  # config.action_mail.default_url_options = { :host => 'link_to_local_dev_environment'}
+  config.action_mailer_delivery_method = :test
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
   # Show full error reports.
   config.consider_all_requests_local = true

@@ -25,17 +25,11 @@
   <div class="form-group">
     <%= f.label :picture, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
-      <%= f.file_field :picture, accept: "image/jpeg, image/gif, image/png", :class => 'form-control' %>
+      <%= f.file_field :picture, accept: "image/jpeg, image/gif, image/png" %>
     </div>
     <%=f.error_span(:picture) %>
   </div>
-  <div class="form-group">
-    <%= f.label :string, :class => 'control-label col-lg-2' %>
-    <div class="col-lg-10">
-      <%= f.text_field :string, :class => 'form-control' %>
-    </div>
-    <%=f.error_span(:string) %>
-  </div>
+
 
   <div class="form-group">
     <div class="col-lg-offset-2 col-lg-10">
@@ -47,6 +41,7 @@
 
 <% end %>
 
+<!--Validation to reference image upload button-->
 <script type="text/javascript">
   $('#image_picture').bind('change', function() {
       var size_in_megabytes = this.files[0].size/1024/1024;
